@@ -7,5 +7,7 @@ try:
      button = browser.find_element(By.ID, "submit_button")
      button.click()
 finally:
-    # закрываем браузер после всех манипуляций
+    driver.close()
+    time.sleep(30)
+    driver.quit()
     browser.quit()
